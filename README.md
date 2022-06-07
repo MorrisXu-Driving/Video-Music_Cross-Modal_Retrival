@@ -90,10 +90,12 @@ tip: you can input single sample for embedding extraction. If you want to extrac
 
 API:
 ```python
-from embedding import Embedding
-
 embed_loader = Embedding()
+
+# x is a list with x[0] refers to all music features and x[1] refers to all video features
 embeddings = embed_loader(x)
+print(embeddings[0].shape) # audio embedding
+print(embeddings[1].shape) # video embedding
 ```
 
 
