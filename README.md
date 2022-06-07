@@ -32,7 +32,7 @@ In this project, **several fully-connected layers in the offical Vggish architec
 
 For musicnn, we use `MSD_musicnn_big` in [Musicnn](https://github.com/jordipons/musicnn/tree/master/musicnn/musicnn) to extract features.(All model checkpoints have been embeded in this repo so you donnot need to clone any other repos) We also add constraint that only **the first 5 minute audio** will be extracted. The max output size is `(100, 500) = (frame_num, feature_dims)`
 #### vgg_raw:
-```shell
+```bash
 cd feature_extractor/torchvggish/torch_vggish/
 python extract_vgg_pool.py --audio_dir --save_dir --gpu_idx    # Output feature Shape per song = (62, 512, 6, 4)
 ```
