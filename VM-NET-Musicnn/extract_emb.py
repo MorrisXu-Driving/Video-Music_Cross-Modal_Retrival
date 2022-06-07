@@ -24,7 +24,7 @@ embeddings = embed_loader(x)
 print(embeddings[0].shape) # audio embedding
 print(embeddings[1].shape) # video embedding
 
-'''Correct Embedding output shapes should be both equal to (batch_size, 512)!!!'''
+'''Correct Embedding output shapes should be both (batch_size, 512)!!!'''
 
 
 
