@@ -82,13 +82,12 @@ python train.py # to train a model.
 python test.py # to test a trained model.
 ```
 IMPORTANT: The version of VM-NET you want to run and the audio feature extractor you use should be consistent!!!
-## 5.Emedding Extraction and Deployment
+## 5.Emedding Extraction and Deployment API
 The embedding process has been sealed into a Class Object for you to deploy this model using Web Frameworks like Flask. To extract embeddings for unknown music and video musicnn/vggish_raw features:
 * Edit the `model_path` in `embedding.py` to the `summaries_dir` of a model
 * The `extract_emb.py` shows a pipeline for deployment. It shows accepted inputs' shape and print the output embedding's shape if everything goes well.
 tip: you can input single sample for embedding extraction. If you want to extract in a batch format, you have to batchify youself.
 
-API:
 ```python
 embed_loader = Embedding()
 
